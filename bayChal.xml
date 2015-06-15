@@ -9,19 +9,10 @@
     <statement name="DO">
       <block type="oled_cleardisplay" id="442">
         <next>
-          <block type="robot_delay" id="476" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="524">
-                <field name="NUM">1000</field>
-              </block>
+          <block type="oled_drawnumber" id="473" inline="true">
+            <value name="NUMBER">
+              <block type="math_random" id="494"></block>
             </value>
-            <next>
-              <block type="oled_drawnumber" id="473" inline="true">
-                <value name="NUMBER">
-                  <block type="math_random" id="494"></block>
-                </value>
-              </block>
-            </next>
           </block>
         </next>
       </block>
