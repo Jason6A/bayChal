@@ -1,4 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="571" inline="true" x="-33" y="-126">
+    <field name="VAR">item</field>
+  </block>
   <block type="controls_whileUntil" id="371" inline="false" x="182" y="68">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
@@ -7,11 +10,17 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_drawnumber" id="473" inline="true">
-        <value name="NUMBER">
-          <block type="math_random" id="494"></block>
+      <block type="led_select" id="563" inline="true">
+        <field name="ACTION">FLASH</field>
+        <value name="LED">
+          <block type="math_number" id="632">
+            <field name="NUM">100</field>
+          </block>
         </value>
       </block>
     </statement>
+  </block>
+  <block type="oled_color" id="602" x="-33" y="120">
+    <field name="OBJECT">GREEN</field>
   </block>
 </xml>
